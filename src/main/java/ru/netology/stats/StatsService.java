@@ -2,7 +2,7 @@ package ru.netology.stats;
 
 public class StatsService {
 
-        // сумма всех продаж
+    // сумма всех продаж
     public int sumAllSales(int[] sales) {
         int summa = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -11,7 +11,7 @@ public class StatsService {
         return summa;
     }
 
-        //  средняя сумму продаж в месяц
+    //  средняя сумму продаж в месяц
     public int averageSales(int[] sales) {
         int sum = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -20,9 +20,9 @@ public class StatsService {
         return (sum / sales.length);
     }
 
-        /*номер месяца, в котором
-         был пик продаж, то есть осуществлены
-         продажи на максимальную сумму*/
+    /*номер месяца, в котором
+     был пик продаж, то есть осуществлены
+     продажи на максимальную сумму*/
     public int maxSales(int[] sales) {
         int maxMonth = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -33,9 +33,9 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-        /*номер месяца, в котором
-         был пик продаж, то есть осуществлены
-         продажи на минимальную сумму*/
+    /*номер месяца, в котором
+     был пик продаж, то есть осуществлены
+     продажи на минимальную сумму*/
     public int minSales(int[] sales) {
         int minMonth = 0; // номер месяца с минимальными продажами среди просмотренных ранее
         for (int i = 0; i < sales.length; i++) {
@@ -63,7 +63,7 @@ public class StatsService {
         return count;
     }
 
-        // количество месяцев, в которых продажи были выше среднего
+    // количество месяцев, в которых продажи были выше среднего
 
     public int aboveAverageMonthlySales(int[] sales) {
         int sum = 0;
